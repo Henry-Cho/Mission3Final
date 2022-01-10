@@ -48,6 +48,6 @@
         letterGrade = "E";
     }
 
-    $("#tp").html(total + "%");
-    $("#lg").html(letterGrade);  
+    sessionStorage.setItem('tp', total);
+    sessionStorage.setItem('lg', letterGrade);
 })

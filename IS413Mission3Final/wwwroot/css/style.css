@@ -15,3 +15,7 @@ p {
 li {
     list-style: none;
 }
+
+label {
+    color: blue;
+}
