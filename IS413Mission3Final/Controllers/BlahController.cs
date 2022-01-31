@@ -28,6 +28,7 @@ namespace mission3.Controllers
         [HttpPost]
         public IActionResult form (formModel model)
         {
+        // Check model state before calculating
             if (ModelState.IsValid)
             {
                 double homework = model.homework * 0.55;
@@ -93,10 +94,10 @@ namespace mission3.Controllers
 
                 result.total_pct = total;
                 result.letter_grade = letterGrade;
-
+                // I used ViewBag to take these data to the index page.
                 ViewBag.Total_Percentage = result.total_pct;
                 ViewBag.Letter_Grade = result.letter_grade;
-
+            
             }
             return View();
         }
