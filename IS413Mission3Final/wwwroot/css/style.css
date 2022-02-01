@@ -19,3 +19,7 @@ li {
 label {
     color: blue;
 }
+
+form {
+    width: 50vw;
+}
