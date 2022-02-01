@@ -1,4 +1,4 @@
-﻿$("#btn").click(() => {
+$("#btn").click(() => {
     let homework = $("#hw").val() * 0.55;
     let groupProject = $("#gp").val() * 0.05;
     let quiz = $("#quiz").val() * 0.1;
@@ -48,6 +48,7 @@
         letterGrade = "E";
     }
 
+    // using web storage apis, I stored the final percentage and a letter grade in the session.
     sessionStorage.setItem('tp', total);
     sessionStorage.setItem('lg', letterGrade);
 })
