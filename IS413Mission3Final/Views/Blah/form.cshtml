@@ -1,4 +1,4 @@
-﻿@*
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -10,15 +10,15 @@
 <h2>Grade Calculator</h2>
 <form method="post">
     <label>Assignments: </label>
-    <input type="number" id="hw" asp-for="homework" /><br />
+    <input class="form-control" type="number" id="hw" asp-for="homework" /><br />
     <label>Group Project: </label>
-    <input type="number" id="gp" asp-for="gp" /><br />
+    <input class="form-control" type="number" id="gp" asp-for="gp" /><br />
     <label>Quizzes: </label>
-    <input type="number" id="quiz" asp-for="quiz" /><br />
+    <input class="form-control" type="number" id="quiz" asp-for="quiz" /><br />
     <label>Exams: </label>
-    <input type="number" id="exam" asp-for="exam" /><br />
+    <input class="form-control" type="number" id="exam" asp-for="exam" /><br />
     <label>INTEX: </label>
-    <input type="number" id="intex" asp-for="intex" />
+    <input class="form-control" type="number" id="intex" asp-for="intex" />
     <br />
     <button id="btn" type="submit" value="Send">Calculate</button>
     <div asp-validation-summary="All;"></div>
